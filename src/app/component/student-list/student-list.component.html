@@ -1,4 +1,5 @@
 <div class="container">
+    <a class="btn btn-outline-primary" [routerLink]="['/student-create']">New</a>
     <br />
     <div class="table-responsive">
 
@@ -10,6 +11,7 @@
                     <td>FirstMidName</td>
                     <td>EnrollmentDate</td>
                     <td>FullName</td>
+                    <td></td>
                 </tr>
             </thead>
             <tbody>
@@ -20,6 +22,10 @@
                     <td>{{ student.FirstMidName }}</td>
                     <td>{{ student.EnrollmentDate }}</td>
                     <td>{{ student.FullName }}</td>
+                    <td>
+                        <a class="btn btn-outline-warning" [routerLink]="[ '/student-edit', student.ID ]">Edtit</a>
+                        <a class="btn btn-outline-danger" [routerLink]="[ '/student-delete', student.ID ]">Delete</a>
+                    </td>
                 </tr>
             </tbody>
         </table>
