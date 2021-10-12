@@ -2,6 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, observable } from 'rxjs';
 import { Student } from '../domain/student';
+import { environment } from "src/environments/environment";
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -10,7 +13,7 @@ export class StudentService {
   public url: string = '';
 
   constructor(public httpClient: HttpClient) {
-    this.url = 'https://university-api.azurewebsites.net/api/Students/';
+    this.url = environment.apiUrl + 'api/Students/';
 
   }
   public getAll(): Observable<any> {

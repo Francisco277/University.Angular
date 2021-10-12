@@ -4,6 +4,6 @@ export class Student {
         public LastName: string,
         public FirstMidName: string,
         public EnrollmentDate: Date,
-        public FullName: string
+        public FullName :string
     ) { }
 }
