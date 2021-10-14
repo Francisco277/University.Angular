@@ -15,6 +15,7 @@ import { StudentCreateComponent } from './component/student-create/student-creat
 import { StudentEditComponent } from './component/student-edit/student-edit.component';
 import { StudentDeleteComponent } from './component/student-delete/student-delete.component';
 import { DepartmentCreateComponent } from './component/department-create/department-create.component';
+import { DepartmentEditComponent } from './component/department-edit/department-edit.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DepartmentCreateComponent } from './component/department-create/departm
     StudentCreateComponent,
     StudentEditComponent,
     StudentDeleteComponent,
-    DepartmentCreateComponent
+    DepartmentCreateComponent,
+    DepartmentEditComponent
   ],
   imports: [
     BrowserModule,
