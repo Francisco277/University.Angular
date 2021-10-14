@@ -16,6 +16,13 @@ import { StudentEditComponent } from './component/student-edit/student-edit.comp
 import { StudentDeleteComponent } from './component/student-delete/student-delete.component';
 import { DepartmentCreateComponent } from './component/department-create/department-create.component';
 import { DepartmentEditComponent } from './component/department-edit/department-edit.component';
+import { DepartmentListComponent } from './component/department-list/department-list.component';
+import { DepartmentDeleteComponent } from './component/department-delete/department-delete.component';
+import { CourseListComponent } from './component/course-list/course-list.component';
+import { CourseCreateComponent } from './component/course-create/course-create.component';
+import { CourseEditComponent } from './component/course-edit/course-edit.component';
+import { CourseDeleteComponent } from './component/course-delete/course-delete.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +32,14 @@ import { DepartmentEditComponent } from './component/department-edit/department-
     StudentEditComponent,
     StudentDeleteComponent,
     DepartmentCreateComponent,
-    DepartmentEditComponent
+    DepartmentEditComponent,
+    DepartmentListComponent,
+    DepartmentDeleteComponent,
+    CourseListComponent,
+    CourseCreateComponent,
+    CourseEditComponent,
+    CourseDeleteComponent,
+   
   ],
   imports: [
     BrowserModule,

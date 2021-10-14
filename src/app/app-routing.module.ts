@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CourseCreateComponent } from './component/course-create/course-create.component';
+import { CourseDeleteComponent } from './component/course-delete/course-delete.component';
+import { CourseEditComponent } from './component/course-edit/course-edit.component';
+import { CourseListComponent } from './component/course-list/course-list.component';
 import { DepartmentCreateComponent } from './component/department-create/department-create.component';
+import { DepartmentDeleteComponent } from './component/department-delete/department-delete.component';
 import { DepartmentEditComponent } from './component/department-edit/department-edit.component';
+import { DepartmentListComponent } from './component/department-list/department-list.component';
 import { StudentCreateComponent } from './component/student-create/student-create.component';
 import { StudentDeleteComponent } from './component/student-delete/student-delete.component';
 import { StudentEditComponent } from './component/student-edit/student-edit.component';
@@ -13,7 +19,14 @@ const routes: Routes = [
   { path: 'student-edit/:id', component: StudentEditComponent },
   { path: 'student-delete/:id', component: StudentDeleteComponent },
   { path: 'department-create', component: DepartmentCreateComponent },
-  { path: 'department-edit/:id', component: DepartmentEditComponent }
+  { path: 'department-edit/:id', component: DepartmentEditComponent },
+  { path: 'department-list', component: DepartmentListComponent },
+  { path: 'department-delete/:id', component: DepartmentDeleteComponent },
+  { path: 'course-list', component: CourseListComponent },
+  { path: 'course-create', component: CourseCreateComponent },
+  { path: 'course-edit/:id', component: CourseEditComponent },
+  { path: 'course-delete/:id', component: CourseDeleteComponent }
+
 ];
 
 @NgModule({
