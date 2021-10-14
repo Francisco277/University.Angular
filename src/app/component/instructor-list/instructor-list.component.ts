@@ -1,14 +1,13 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { InstructorService } from 'src/app/service/instructor.service';
 import { Instructor } from 'src/app/domain/instructor';
 import { Subscription } from 'rxjs';
-import { InstructorService } from 'src/app/service/instructor.service';
-
 @Component({
   selector: 'app-instructor-list',
   templateUrl: './instructor-list.component.html',
   styleUrls: ['./instructor-list.component.css']
 })
-export class StudentListComponent implements OnInit, OnDestroy {
+export class InstructorListComponent implements OnInit, OnDestroy{
 
   public instructors: Instructor[] = [];
   public subInstructors: Subscription = new Subscription();

@@ -22,6 +22,10 @@ import { CourseListComponent } from './component/course-list/course-list.compone
 import { CourseCreateComponent } from './component/course-create/course-create.component';
 import { CourseEditComponent } from './component/course-edit/course-edit.component';
 import { CourseDeleteComponent } from './component/course-delete/course-delete.component';
+import { InstructorListComponent } from './component/instructor-list/instructor-list.component';
+import { InstructorEditComponent } from './component/instructor-edit/instructor-edit.component';
+import { InstructorCreateComponent } from './component/instructor-create/instructor-create.component';
+import { InstructorDeleteComponent } from './component/instructor-delete/instructor-delete.component';
 
 
 @NgModule({
@@ -39,6 +43,10 @@ import { CourseDeleteComponent } from './component/course-delete/course-delete.c
     CourseCreateComponent,
     CourseEditComponent,
     CourseDeleteComponent,
+    InstructorListComponent,
+    InstructorEditComponent,
+    InstructorCreateComponent,
+    InstructorDeleteComponent,
    
   ],
   imports: [
