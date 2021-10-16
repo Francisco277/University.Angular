@@ -35,14 +35,15 @@
                 <select id="InstructorID" name="InstructorID" class="form-control" #InstructorID
                     [(ngModel)]="department.InstructorID">
 
-                    <option *ngFor="let item of instructors" [value]="item.ID"> {{ item.LastName}} - {{item.FirstMidName}}
+                    <option *ngFor="let item of instructors" [value]="item.ID"> {{ item.LastName}} -
+                        {{item.FirstMidName}}
 
                     </option>
                 </select>
                 <label for="InstructorID">Instructor</label>
             </div>
-</div>
-<br>
+        </div>
+        <br>
     </form>
 
 </div>

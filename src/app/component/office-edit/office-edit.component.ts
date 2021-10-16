@@ -1,20 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { Department } from 'src/app/domain/department';
-import { DepartmentService } from 'src/app/service/department.service';
+import { Office} from 'src/app/domain/office';
+import { OfficeService } from 'src/app/service/office.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { InstructorService } from 'src/app/service/instructor.service';
 import { Instructor } from 'src/app/domain/instructor';
 
+
 @Component({
-  selector: 'app-department-edit',
-  templateUrl: './department-edit.component.html',
-  styleUrls: ['./department-edit.component.css']
+  selector: 'app-office-edit',
+  templateUrl: './office-edit.component.html',
+  styleUrls: ['./office-edit.component.css']
 })
-export class DepartmentEditComponent implements OnInit {
+export class OfficeEditComponent implements OnInit {
 
   public instructors: Instructor[] = [];
 
-  public department: Department = new Department(0, '', 0, new Date(), 0);
+  public office: Office = new Office(0, '');
   public id: number = 0;
 
   public showMsg: boolean = false;
@@ -23,7 +24,7 @@ export class DepartmentEditComponent implements OnInit {
 
 
 
-  constructor(public departmentService: DepartmentService,
+  constructor(public officeService: OfficeService,
     public instructorService: InstructorService,
     public activatedRoute: ActivatedRoute,
     public router: Router) { }
@@ -44,20 +45,20 @@ export class DepartmentEditComponent implements OnInit {
     let param = this.activatedRoute.snapshot.paramMap.get('id');
     this.id = Number(param);
 
-    this.departmentService.getById(this.id).subscribe(data => {
-      this.department = data;
+    this.officeService.getById(this.id).subscribe(data => {
+      this.office = data;
     });
   }
   public edit() {
-    if (this.department.Name === '') {
+    if (this.office.Location === '') {
       this.showMsg = true;
       this.msg = 'The fields Name is required';
       this.type = 'warning';
       return;
     }
 
-    this.departmentService.edit(this.department).subscribe(data => {
-      this.router.navigate(['department-list']);
+    this.officeService.edit(this.office).subscribe(data => {
+      this.router.navigate(['office-list']);
     }, error => {
       this.showMsg = true;
       this.msg = error;

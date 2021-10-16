@@ -26,6 +26,10 @@ import { InstructorListComponent } from './component/instructor-list/instructor-
 import { InstructorEditComponent } from './component/instructor-edit/instructor-edit.component';
 import { InstructorCreateComponent } from './component/instructor-create/instructor-create.component';
 import { InstructorDeleteComponent } from './component/instructor-delete/instructor-delete.component';
+import { OfficeListComponent } from './component/office-list/office-list.component';
+import { OfficeCreateComponent } from './component/office-create/office-create.component';
+import { OfficeEditComponent } from './component/office-edit/office-edit.component';
+import { OfficeDeleteComponent } from './component/office-delete/office-delete.component';
 
 
 @NgModule({
@@ -47,6 +51,10 @@ import { InstructorDeleteComponent } from './component/instructor-delete/instruc
     InstructorEditComponent,
     InstructorCreateComponent,
     InstructorDeleteComponent,
+    OfficeListComponent,
+    OfficeCreateComponent,
+    OfficeEditComponent,
+    OfficeDeleteComponent,
    
   ],
   imports: [

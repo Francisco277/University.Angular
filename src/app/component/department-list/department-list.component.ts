@@ -2,7 +2,6 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Department } from 'src/app/domain/department';
 import { InstructorService } from 'src/app/service/instructor.service';
-
 import { DepartmentService } from 'src/app/service/department.service';
 
 @Component({

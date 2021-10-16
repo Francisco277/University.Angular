@@ -12,6 +12,10 @@ import { InstructorCreateComponent } from './component/instructor-create/instruc
 import { InstructorDeleteComponent } from './component/instructor-delete/instructor-delete.component';
 import { InstructorEditComponent } from './component/instructor-edit/instructor-edit.component';
 import { InstructorListComponent } from './component/instructor-list/instructor-list.component';
+import { OfficeCreateComponent } from './component/office-create/office-create.component';
+import { OfficeDeleteComponent } from './component/office-delete/office-delete.component';
+import { OfficeEditComponent } from './component/office-edit/office-edit.component';
+import { OfficeListComponent } from './component/office-list/office-list.component';
 import { StudentCreateComponent } from './component/student-create/student-create.component';
 import { StudentDeleteComponent } from './component/student-delete/student-delete.component';
 import { StudentEditComponent } from './component/student-edit/student-edit.component';
@@ -34,6 +38,10 @@ const routes: Routes = [
   { path: 'instructor-edit/:id', component: InstructorEditComponent },
   { path: 'instructor-create', component: InstructorCreateComponent },
   { path: 'instructor-delete/:id', component: InstructorDeleteComponent },
+  { path: 'office-list', component: OfficeListComponent },
+  { path: 'office-create', component: OfficeCreateComponent },
+  { path: 'office-edit/:id', component: OfficeEditComponent },
+  { path: 'office-delete/:id', component: OfficeDeleteComponent }
 ];
 
 @NgModule({
